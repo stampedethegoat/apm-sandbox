@@ -1,0 +1,112 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b63eb12a5bcaf35ece17698dcddb7eaf",
+    "packages": [
+        {
+            "name": "datadog/dd-trace",
+            "version": "0.19.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DataDog/dd-trace-php.git",
+                "reference": "8c95f62c515226be16b598e651ebc12fe2082756"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataDog/dd-trace-php/zipball/8c95f62c515226be16b598e651ebc12fe2082756",
+                "reference": "8c95f62c515226be16b598e651ebc12fe2082756",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": "~5.4.0 || ~5.6.0 || ^7.0"
+            },
+            "require-dev": {
+                "g1a/composer-test-scenarios": "~3.0",
+                "mockery/mockery": "*",
+                "phpunit/phpunit": "^4",
+                "squizlabs/php_codesniffer": "^3.3.0",
+                "symfony/process": "*"
+            },
+            "type": "library",
+            "extra": {
+                "scenarios": {
+                    "elasticsearch1": {
+                        "require": {
+                            "elasticsearch/elasticsearch": "1.2.*"
+                        },
+                        "scenario-options": {
+                            "create-lockfile": false
+                        }
+                    },
+                    "guzzle5": {
+                        "require": {
+                            "guzzlehttp/guzzle": "~5.0"
+                        },
+                        "scenario-options": {
+                            "create-lockfile": false
+                        }
+                    },
+                    "guzzle6": {
+                        "require": {
+                            "guzzlehttp/guzzle": "~6.0"
+                        },
+                        "scenario-options": {
+                            "create-lockfile": false
+                        }
+                    },
+                    "predis1": {
+                        "require": {
+                            "predis/predis": "^1.1"
+                        },
+                        "scenario-options": {
+                            "create-lockfile": false
+                        }
+                    }
+                },
+                "scenario-options": {
+                    "dependency-licenses": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DDTrace\\": "./src/DDTrace/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "DataDog",
+                    "email": "dev@datadoghq.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "José Carlos Chávez",
+                    "email": "jcchavezs@gmail.com"
+                }
+            ],
+            "description": "PHP APM Client",
+            "keywords": [
+                "DataDog",
+                "php",
+                "tracing"
+            ],
+            "time": "2019-04-16T15:09:57+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
