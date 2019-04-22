@@ -1,6 +1,7 @@
 const tracer = require('dd-trace').init({
-  hostname : 'node-js-host',
-  port     : 8126
+  hostname : 'localhost',
+  port     : 8126,
+  debug    : true
 })
 
 let main = () => {
